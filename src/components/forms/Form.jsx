@@ -22,6 +22,11 @@ const Form = ({showAlert, modalHandler, onShowAlert}) => {
       onShowAlert('Please fill all required fields !', 'error')
       return
     }
+    let validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+    if(!validEmail.test(email)){
+      onShowAlert('Email is not correct !', 'error')
+      return
+    }
 
     // setting input values on modal
     modalHandler(inputs);

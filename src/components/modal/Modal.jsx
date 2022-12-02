@@ -28,38 +28,38 @@ const ModalContainer = ({
             {userDetails.name && (
               <p  className="mb-1">
                 <FaUserAlt className="text-gray-500 text-[18px] inline-block mb-[4px]" />{" "}
-                <span className="font-semibold">{userDetails.name}</span>
+                <span className="ml-2 font-semibold">{userDetails.name}</span>
               </p>
             )}
             {userDetails.email && (
               <p  className="mb-1">
                 {" "}
                 <MdEmail className="text-gray-500 text-[18px] inline-block mb-[4px]" />{" "}
-                <span className="font-semibold">{userDetails.email}</span>
+                <span className="ml-2 font-semibold">{userDetails.email}</span>
               </p>
             )}
             {userDetails.msg && (
               <p  className="mb-1">
                 <BiMessageRoundedError className="text-gray-500 text-[18px] inline-block mb-[4px]" />{" "}
-                <span className="font-semibold">{userDetails.msg}</span>
+                <span className="ml-2 font-semibold">{userDetails.msg}</span>
               </p>
             )}
             {userDetails.min && (
               <p className="mb-1">
                 <MdOutlineAccessTimeFilled className="text-gray-500 text-[18px] inline-block mb-[4px]" />
-                <span  className="font-semibold"> {userDetails.min} min</span>
+                <span  className="ml-2 font-semibold"> {userDetails.min} min</span>
               </p>
             )}
             {userDetails.time && (
               <p className="mb-1">
                 <HiCalendar className="text-gray-500 text-[18px] inline-block mb-[4px]" />{" "}
-                <span className="ml-2 ">{userDetails.time}</span>
+                <span className="ml-2 font-semibold">{userDetails.time}</span>
               </p>
             )}
             {userDetails.country && (
               <p className="mb-1">
                 <FaGlobeAmericas className="text-gray-500 text-[18px] inline-block mb-[4px]" />{" "}
-                <span className="ml-2"> {userDetails.country}</span>
+                <span className="ml-2 font-semibold"> {userDetails.country}</span>
               </p>
             )}
           </>
