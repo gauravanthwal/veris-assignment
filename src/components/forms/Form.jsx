@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Input, Button, Alert } from "antd";
 
-const Form = ({showAlert, modalHandler, onShowAlert}) => {
+const Form = ({showAlert, modalHandler, onShowAlert, setShowAlert}) => {
   const [inputs, setInputs] = useState({
     name: "",
     email: "",

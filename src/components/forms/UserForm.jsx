@@ -31,6 +31,7 @@ const UserForm = ({ setUserDetails, showModal }) => {
         showAlert={showAlert}
         modalHandler={modalHandler}
         onShowAlert={onShowAlert}
+        setShowAlert={setShowAlert}
       />
     </div>
   );
